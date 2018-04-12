@@ -1,0 +1,61 @@
+<div class="search">
+  <div class="searcher">
+    <input type="text" class="form-control" placeholder="Enter word" (keyup.enter)="search()" [(ngModel)]="word">
+  </div>
+  <div class="container main">
+    <div class="row main-row">
+      <div class="col similar">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item word-item" *ngFor="let word of similarWordList" (click)="search(word[0])">{{word[0]}}:{{word[1].toString().substr(0,5)}}</li>
+
+        </ul>
+      </div>
+      <div class="col-6 translate">
+        <div class="word">
+          <h2 class="dynamic-text">{{wordTranslation.word}}</h2>
+        </div>
+        <div class="row means">
+          <div class="card" *ngFor="let mean of wordTranslation.means.slice(0,3)">
+            <div class="card-header">
+              {{mean.wordType}}
+            </div>
+            <div class="my-card-body">
+                <p>{{mean.mean}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="example">
+          <p class="no-example" *ngIf="wordTranslation.examples.length === 0">暂无例句</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="echart">
+          <echarts-ng2 #echarts [option]="option" [style]="{'height': '100%'}"></echarts-ng2>
+        </div>
+        <div class="hold">
+
+        </div>
+        <div class="word-info">
+          <div class="row">
+            <div class="col">
+              <p>统计次数:</p>
+              <p>出现频率:</p>
+              <p>错误率:</p>
+            </div>
+            <div class="col">
+              <p>
+                {{wordInfo.count}}
+              </p>
+              <p>
+                {{wordInfo.frequency}}
+              </p>
+              <p>
+                暂无
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

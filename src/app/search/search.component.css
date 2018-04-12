@@ -1,0 +1,133 @@
+.searcher{
+  width: 100%;
+  background-color: #ececec;
+  min-height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.search{
+  height: 80%;
+}
+
+.searcher .form-control{
+  width: 45%;
+}
+
+.main{
+  height: 100%;
+  padding: 25px;
+}
+
+.main>.row{
+  height: 100%;
+}
+
+.similar{
+  padding: 5px;
+  height: 90%;
+  border-radius: 5px;
+  background-color: #f7f7f9;
+  box-shadow: 0 2px 2px #cfcfcf;
+}
+
+.translate{
+  height: 90%;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #f7f7f9;
+  box-shadow: 0 2px 2px #cfcfcf;
+}
+
+.echart{
+  height: 43%;
+  background-color: #f7f7f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px #cfcfcf;
+
+}
+
+.hold{
+  height: 4%;
+}
+.word-info{
+  padding: 10px;
+  height: 43%;
+  background-color: #f7f7f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px #cfcfcf;
+  text-align: center;
+}
+
+.word-item{
+  cursor: pointer;
+}
+
+.word{
+ width: 100%;
+  height: 16%;
+  text-align: center;
+}
+
+.dynamic-text{
+  font-size: 4rem;
+  font-weight: 300;
+
+}
+
+.means{
+  height: 20%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.means::-webkit-scrollbar
+{
+  width: 6px;
+  height: 16px;
+  background-color: #F5F5F5;
+}
+
+.means::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.means::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #5cb86c;
+}
+
+
+.card-header{
+  color: #5cb86c;
+}
+
+.my-card-body{
+  padding: 5px;
+}
+
+.card{
+ margin: 5px;
+}
+
+.example{
+  margin: 10px;
+  height: 60%;
+}
+
+.no-example{
+  position: absolute;
+  top: 64%;
+  left: 46%;
+}

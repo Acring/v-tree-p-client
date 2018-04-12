@@ -1,0 +1,36 @@
+.header{
+  width: 100%;
+  background-color: #5cb86c;
+  min-height: 84px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: end;
+}
+
+.header img{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 64px;
+  height: 64px;
+}
+
+
+.header .nav{
+  margin: 0 auto
+}
+
+.active{
+  border-bottom: 5px solid #cfcfcf;
+}
+
+.link{
+  display: block;
+  padding: 0.5rem 1rem;
+  color: aliceblue!important;
+}
+
+.link:hover{
+  color: #cfcfcf;
+  cursor: pointer;
+}
