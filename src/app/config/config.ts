@@ -10,8 +10,8 @@ export const config = {
     testPort: 5000,
   },
   getApiPrefix: () => {
-    return `${this.server.protocol}://${this.environment.debug ? 
-      this.server.testHost+':'+this.server.testPort : this.server.host+':'+this.server.port}`;
+    return `${config.server.protocol}://${config.environment.debug ? 
+      config.server.testHost+':'+config.server.testPort : config.server.host+':'+config.server.port}`;
   },
 
 };
